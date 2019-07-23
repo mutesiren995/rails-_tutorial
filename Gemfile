@@ -9,6 +9,10 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'mysql2','~>0.4.10'
+gem 'guard', '~> 2.15'
+gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
+gem 'minitest-rails', '~> 5.1'
+gem 'minitest', '~> 5.11', '>= 5.11.3'
 
 
 group :development, :test do
