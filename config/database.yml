@@ -7,8 +7,12 @@ default: &default
 
 development:
   <<: *default
-  database: sample_app_development
+  database: microposts_app_development
 
 test:
   <<: *default
-  database: sample_app_test
+  database: microposts_app_test
+
+production:
+  <<: *default
+  database: microposts_app_production
