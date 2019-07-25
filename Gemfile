@@ -13,7 +13,8 @@ gem 'guard', '~> 2.15'
 gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
 gem 'minitest-rails', '~> 5.1'
 gem 'minitest', '~> 5.11', '>= 5.11.3'
-
+gem 'sass-rails',              '5.0.6'
+gem 'bootstrap-sass', '~> 3.4.0'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
