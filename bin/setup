@@ -22,9 +22,9 @@ chdir APP_ROOT do
   # system('bin/yarn')
 
 
-  # puts "\n== Copying sample files =="
+  # puts "\n== Copying microposts files =="
   # unless File.exist?('config/database.yml')
-  #   cp 'config/database.yml.sample', 'config/database.yml'
+  #   cp 'config/database.yml.microposts', 'config/database.yml'
   # end
 
   puts "\n== Preparing database =="

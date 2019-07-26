@@ -9,12 +9,11 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'mysql2','~>0.4.10'
-gem 'guard', '~> 2.15'
-gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
-gem 'minitest-rails', '~> 5.1'
-gem 'minitest', '~> 5.11', '>= 5.11.3'
 gem 'sass-rails',              '5.0.6'
 gem 'bootstrap-sass', '~> 3.4.0'
+gem 'rspec', '~> 3.8'
+gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
+gem 'bcrypt',                  '3.1.12'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
@@ -29,6 +28,14 @@ end
 
 group :production do
   gem 'pg', '0.20.0'
+end
+
+group :test do
+  gem 'guard', '~> 2.15'
+  gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
+  gem 'minitest-rails', '~> 5.1'
+  gem 'minitest', '~> 5.11', '>= 5.11.3'
+  gem 'minitest-reporters', '~> 1.3', '>= 1.3.6'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
