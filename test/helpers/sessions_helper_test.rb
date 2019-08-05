@@ -18,7 +18,7 @@ class SessionsHelperTest < ActionView::TestCase
   end
 
   test "it's no difference between remember_token and remember_digest" do
-    if @user && @user.authenticated?(cookies[:remember_token])
+    if @user && @user.authenticated?(:remember, cookies[:remember_token])
       assert_equal @user, current_user
     end
   end

@@ -27,7 +27,15 @@ Rails.application.configure do
   end
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :test
+  host = 'localhost:3000' # 不要原封不动使用这个域名，
+                       # 应该使用你本地的开发主机地址
+  # 在云端 IDE 中使用这一行
+  # config.action_mailer.default_url_options = { host: host, protocol: 'https' }
+  # 在本地设备中使用这一行
+  config.action_mailer.default_url_options = { host: host, protocol: 'http' }
+
 
   config.action_mailer.perform_caching = false
 
@@ -51,4 +59,8 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  config.time_zone = 'Beijing'
+
+
 end
