@@ -9,14 +9,14 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'mysql2','~>0.4.10'
-gem 'bootstrap-sass', '~> 3.4.0'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'rspec', '~> 3.8'
 gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
 gem 'bcrypt',                  '3.1.12'
 gem 'faker',                   '1.7.3'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'carrierwave',             '1.2.2'
-gem 'mini_magick',             '4.7.0'
+gem 'mini_magick',             '4.9.4'
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
 end
